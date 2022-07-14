@@ -190,7 +190,7 @@ header .icon__bar:nth-child(2) {
 #landing {
     height: calc(100vh - 56px); /* - height of header element */
     background-color: var(--lighter-color);
-    background-image: url('../assets/images/landing.jpg');
+    background-image: url('../assets/images/landing.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: inherit;
