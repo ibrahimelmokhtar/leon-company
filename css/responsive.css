@@ -33,18 +33,19 @@
     }
 
     /* Features Section */
-    #features {
+    #features,
+    #portfolio {
         padding: 32px 24px;
     }
 
     /* Card Title */
-    #features .card h2 {
+    .card h2 {
         font-size: 16pt;
         line-height: 40pt;
     }
 
     /* Card Paragraph */
-    #features .card p {
+    .card p {
         font-size: 14pt;
     }
 
@@ -89,13 +90,13 @@
     }
 
     /* Card Title */
-    #features .card h2 {
+    .card h2 {
         font-size: 16pt;
         line-height: 40pt;
     }
 
     /* Card Paragraph */
-    #features .card p {
+    .card p {
         font-size: 14pt;
     }
 
@@ -178,13 +179,13 @@
     }
 
     /* Card Title */
-    #features .card h2 {
+    .card h2 {
         font-size: 18pt;
         line-height: 60pt;
     }
 
     /* Card Paragraph */
-    #features .card p {
+    .card p {
         font-size: 15pt;
     }
 }
