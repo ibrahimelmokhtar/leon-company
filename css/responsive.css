@@ -1,108 +1,63 @@
 /* based on Bootstrap Grid System */
-
-/* ******************************************************************** */
 /* *************** xs: extra small devices (phones) ******************* */
-/* ******************************************************************** */
 @media only screen and (max-width: 768px) {
-    /* *************************** */
     /* ********* General ********* */
-    /* *************************** */
     /* Each Section Main Container */
-    .parent {
-        padding: 24px;
-    }
-
+    .parent { padding: 24px; }
     /* Section Title */
-    .parent .title {
-        font-size: 64pt;
+    .parent .title { font-size: 64pt; }
+    /* Section Quote */
+    .parent .quote { margin-top: -30px; }
+    /* Main Grid Content */
+    .content {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-
-    .parent .quote {
-        margin-top: -30px;
-    }
-
-    /* *************************** */
     /* ********* Landing ********* */
-    /* *************************** */
     /* Main Title */
-    #landing h1 {
-        font-size: 38pt;
-    }
-
+    #landing h1 { font-size: 38pt; }
     /* Main Paragraph */
     #landing p {
         font-size: 14pt;
         width: 85%;
         max-width: 400px;
     }
-
-    /* *************************** */
     /* ******** Sections ********* */
-    /* *************************** */
     /* Sections */
     #features,
     #portfolio,
-    #about {
-        padding: 32px 24px;
-    }
-
-    /* *************************** */
+    #about { padding: 32px 24px; }
     /* ******** Features ********* */
-    /* *************************** */
     /* Card Title */
     .card h2 {
         font-size: 16pt;
         line-height: 40pt;
     }
-
     /* Card Paragraph */
-    .card p {
-        font-size: 14pt;
-    }
-
-    /* *************************** */
+    .card p { font-size: 14pt; }
     /* ******** Services ********* */
-    /* *************************** */
     /* Side Image Container And Its Content */
     .image__container,
     .image__container::before,
-    .image__container::after {
-        display: none;
-    }
-
-    /* *************************** */
+    .image__container::after { display: none; }
     /* ********** About ********** */
-    /* *************************** */
-    #about .image__container {
-        display: block;
-    }
-
-    #about .content {
-        flex-direction: column;
-    }
-
-    /* *************************** */
+    #about .image__container { display: block; }
+    #about .content { flex-direction: column; }
     /* ******** Contact ********** */
-    /* *************************** */
     #contact .content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
-
     /* Main Title */
-    #contact .content h3 {
-        font-size: 20pt;
-    }
-
+    #contact .content h3 { font-size: 20pt; }
     /* Displayed Mail */
     #contact .mail {
         font-size: 18pt;
         padding: 5px 20px;
         padding-right: 0;
     }
-
     /* Social Media Container */
     #contact .social {
         margin-top: 30px;
@@ -110,275 +65,141 @@
         font-size: 12pt;
         width: 400px;
     }
-
     /* Social Media Links */
-    #contact .links a {
-        font-size: 16pt;
-    }
-
-    /* *************************** */
+    #contact .links a { font-size: 16pt; }
     /* ********* Footer ********** */
-    /* *************************** */
-    footer {
-        font-size: 14pt;
-    }
+    footer { font-size: 14pt; }
 }
-
-/* ******************************************************************** */
 /* ***************** sm: small devices (tablets) ********************** */
-/* ******************************************************************** */
 @media only screen and (min-width: 768px) {
-    /* *************************** */
     /* ********* General ********* */
-    /* *************************** */
     /* Each Section Main Container */
-    .parent {
-        padding: 64px;
-    }
-
+    .parent { padding: 64px; }
     /* Section Title */
-    .parent .title {
-        font-size: 72pt;
+    .parent .title { font-size: 72pt; }
+    /* Section Quote */
+    .parent .quote { margin-top: -30px; }
+    /* Main Grid Content */
+    .content {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-
-    .parent .quote {
-        margin-top: -30px;
-    }
-
-    /* *************************** */
     /* ********* Landing ********* */
-    /* *************************** */
     /* Main Title */
-    #landing h1 {
-        font-size: 44pt;
-    }
-
+    #landing h1 { font-size: 44pt; }
     /* Main Paragraph */
     #landing p {
         font-size: 16pt;
         width: 55%;
         max-width: 450px;
     }
-
-    /* *************************** */
     /* ******** Features ********* */
-    /* *************************** */
     /* Card Title */
-    .card h2 {
-        font-size: 16pt;
-        line-height: 40pt;
-    }
-
+    .card h2 { font-size: 16pt; line-height: 40pt; }
     /* Card Paragraph */
-    .card p {
-        font-size: 14pt;
-    }
-
-    /* *************************** */
+    .card p { font-size: 14pt; }
     /* ******** Services ********* */
-    /* *************************** */
     /* Side Image Container And Its Content */
     .image__container,
     .image__container::before,
-    .image__container::after {
-        display: none;
-    }
-
-    /* *************************** */
+    .image__container::after { display: none; }
     /* ********** About ********** */
-    /* *************************** */
-    #about .image__container {
-        display: block;
-    }
-
-    #about .content {
-        flex-direction: column;
-    }
-
+    #about .image__container { display: block; }
+    #about .content { flex-direction: column; }
     /* Text Container */
-    #about .info {
-        width: 100%;
-    }
-
-    /* *************************** */
+    #about .info { width: 100%; }
     /* ********* Contact ********* */
-    /* *************************** */
     /* Main Title */
-    #contact .content h3 {
-        font-size: 26pt;
-    }
-
+    #contact .content h3 { font-size: 26pt; }
     /* Displayed Mail */
-    #contact .mail {
-        font-size: 22pt;
-    }
-
+    #contact .mail { font-size: 22pt; }
     /* Social Media Container */
-    #contact .social {
-        font-size: 16pt;
-        width: 550px;
-    }
-
+    #contact .social { font-size: 16pt; width: 550px; }
     /* Social Media Links */
-    #contact .links a {
-        font-size: 18pt;
-    }
+    #contact .links a { font-size: 18pt; }
 }
-
-/* ******************************************************************** */
 /* ************** md: medium devices (small laptops) ****************** */
-/* ******************************************************************** */
 @media only screen and (min-width: 992px) {
-    /* *************************** */
     /* ********* General ********* */
-    /* *************************** */
     /* Each Section Main Container */
-    .parent {
-        padding: 64px;
-    }
-
+    .parent { padding: 64px; }
     /* Section Title */
-    .parent .title {
-        font-size: 80pt;
+    .parent .title { font-size: 80pt; }
+    /* Section Quote */
+    .parent .quote { margin-top: -35px; }
+    /* Main Grid Content */
+    .content {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-
-    .parent .quote {
-        margin-top: -35px;
-    }
-
-    /* *************************** */
     /* ********* Landing ********* */
-    /* *************************** */
     /* Main Title */
-    #landing h1 {
-        font-size: 49pt;
-    }
-
+    #landing h1 { font-size: 49pt; }
     /* Main Paragraph */
     #landing p {
         font-size: 18pt;
         width: 50%;
         max-width: 500px;
     }
-
-    /* *************************** */
     /* ******** Features ********* */
-    /* *************************** */
-    /* Card Title: Inherited From (sm) devices */
-    /* Card Paragraph: Inherited From (sm) devices */
-
-    /* *************************** */
+    /* Card Title And Card Paragraph: Inherited From (sm) devices */
     /* ******** Services ********* */
-    /* *************************** */
     /* Side Image Container And Its Content */
     .image__container,
     .image__container::before,
-    .image__container::after {
-        display: block;
-    }
-
-    /* *************************** */
+    .image__container::after { display: block; }
     /* ********** About ********** */
-    /* *************************** */
-    #about .content {
-        flex-direction: row;
-    }
-
+    #about .content { flex-direction: row; }
     /* Displayed Text */
-    #about .info p {
-        width: 60%;
-    }
-
+    #about .info p { width: 60%; }
     /* Side Image Background Shape */
-    #about .image__container::after {
-        right: -120%;
-    }
-
-    /* *************************** */
+    #about .image__container::after { right: -120%; }
     /* ********* Contact ********* */
-    /* *************************** */
     /* Main Title */
-    #contact .content h3 {
-        font-size: 28pt;
-    }
-
+    #contact .content h3 { font-size: 28pt; }
     /* Displayed Mail */
-    #contact .mail {
-        font-size: 24pt;
-    }
-
+    #contact .mail { font-size: 24pt; }
     /* Social Media Container */
-    #contact .social {
-        font-size: 16pt;
-        width: 550px;
-    }
-
+    #contact .social { font-size: 16pt; width: 550px; }
     /* Social Media Links */
-    #contact .links a {
-        font-size: 18pt;
-    }
+    #contact .links a { font-size: 20pt; }
 }
-
-/* ******************************************************************** */
 /* ************ lg: large devices (laptops and desktops) ************** */
-/* ******************************************************************** */
 @media only screen and (min-width: 1200px) {
-    /* *************************** */
     /* ********* General ********* */
-    /* *************************** */
     /* Section Title */
-    .parent .title {
-        font-size: 100pt;
+    .parent .title { font-size: 100pt; }
+    /* Section Quote */
+    .parent .quote { margin-top: -45px; }
+    /* Main Grid Content */
+    .content {
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
-
-    .parent .quote {
-        margin-top: -45px;
-    }
-
-    /* *************************** */
     /* ********* Landing ********* */
-    /* *************************** */
     /* Main Title */
-    #landing h1 {
-        font-size: 55pt;
-    }
-
+    #landing h1 { font-size: 55pt; }
     /* Main Paragraph */
     #landing p {
         font-size: 20pt;
         width: 80%;
         max-width: 550px;
     }
-
-    /* *************************** */
     /* ******** Features ********* */
-    /* *************************** */
     /* Card Title */
-    .card h2 {
-        font-size: 18pt;
-        line-height: 60pt;
-    }
-
+    .card h2 { font-size: 18pt; line-height: 60pt; }
     /* Card Paragraph */
-    .card p {
-        font-size: 15pt;
+    .card p { font-size: 15pt; }
+    /* ******** Services ********* */
+    #services .content {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-
-    /* *************************** */
     /* ********** About ********** */
-    /* *************************** */
     /* Text Container */
-    #about .info {
-        width: 550px;
-    }
-
+    #about .info { width: 70%; }
     /* Side Image Background Shape */
-    #about .image__container::after {
-        right: -88%;
-    }
-
-    /* *************************** */
+    #about .image__container::after { right: -88%; }
     /* ********* Contact ********* */
-    /* *************************** */
     /* Contact Section : Inherited from (md) devices */
 }

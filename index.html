@@ -4,28 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-Store">
     <meta name="description" content="Convert a PSD mockup design into a responsive website">
     <meta name="keywords" content="HTML5, CSS3, Company Website, Mockup Design to HTML">
     <meta name="author" content="Ibrahim El-Mokhtar">
-
     <!-- Browser Tab details -->
     <title>LEON Company</title>
     <link rel="shortcut icon" href="assets/icons/logo-svg.svg" type="image/x-icon">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-
+    <!-- FontAwesome Library - v6.1.1 -->
+    <link rel="preload" media="all" href="plugins/fontawesome-6.1.1/css/brands.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="plugins/fontawesome-6.1.1/css/brands.min.css"></noscript>
+    <!-- Used Fonts -->
+    <!-- Preload Fonts -->
+    <link rel="preload" href="assets/fonts/WorkSans-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="assets/fonts/WorkSans-ExtraBold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="assets/fonts/WorkSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/WorkSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+        /* Work Sans - Regular */
+        @font-face {
+            font-family: 'Work Sans';
+            src: url('assets/fonts/WorkSans-Regular.woff2') format('woff2'), url('assets/fonts/WorkSans-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        /* Work Sans - Extra Bold */
+        @font-face {
+            font-family: 'Work Sans';
+            src: url('assets/fonts/WorkSans-ExtraBold.woff2') format('woff2'), url('assets/fonts/WorkSans-ExtraBold.woff') format('woff');
+            font-weight: 800;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
     <!-- Used stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css">    <!-- Normalize rendered elements -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css">
+        <!-- Normalize rendered elements -->
+    <link rel="preload" media="all" href="css/normalize.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> <!-- Normalize rendered elements -->
+    <noscript><link rel="stylesheet" href="css/normalize.min.css"></noscript>
+        <!-- Main Styles -->
+    <link rel="preload" media="all" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+        <!-- Responsive Styles -->
+    <link rel="preload" media="all" href="css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/responsive.css"></noscript>
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <nav class="container">
+    <header aria-label="Page Header">
+        <nav aria-label="Page Navbar" class="container">
             <!-- Company Logo -->
-            <img id="logo" src="assets/images/logo.webp" alt="Company Logo">
+            <img id="logo" src="assets/images/logo.webp" width="60px" height="24px" alt="Company Logo">
             <!-- Menu Container -->
             <div id="menu">
                 <!-- Menu Icon -->
@@ -36,103 +65,97 @@
                 </div>
                 <!-- Menu List -->
                 <ul id="links">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#services" aria-label="Services Link">Services</a></li>
+                    <li><a href="#portfolio" aria-label="Portfolio Link">Portfolio</a></li>
+                    <li><a href="#about" aria-label="About Link">About</a></li>
+                    <li><a href="#contact" aria-label="Contact Link">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-
     <!-- Landing Section -->
-    <section id="landing">
+    <section aria-label="Landing Section" id="landing">
         <h1>Hello There!</h1>
-        <p>We are Leon - Super Creative & Minimal Agency Web Template </p>
+        <p aria-label="Landing Main Paragraph">We are Leon - Super Creative & Minimal Agency Web Template </p>
     </section>
-
     <!-- Features Section -->
-    <section id="features">
+    <section aria-label="Features Section" id="features" class="parent content">
         <div class="card">
             <!-- Card Icon -->
-            <img src="assets/icons/tell-us-your-idea.webp" alt="Card Icon">
+            <img src="assets/icons/tell-us-your-idea.webp" width="60px" height="60px" alt="First Feature Card Icon" loading="lazy">
             <!-- Card Header -->
             <h2>Tell Us Your Idea</h2>
             <!-- Card Paragraph -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
+            <p aria-label="First Feature Paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
         </div>
         <div class="card">
             <!-- Card Icon -->
-            <img src="assets/icons/we-will-do-all-the-work.webp" alt="Card Icon">
+            <img src="assets/icons/we-will-do-all-the-work.webp" width="60px" height="60px" alt="Second Feature Card Icon" loading="lazy">
             <!-- Card Header -->
             <h2>We Will Do All The Work</h2>
             <!-- Card Paragraph -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
+            <p aria-label="Second Feature Paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
         </div>
         <div class="card">
             <!-- Card Icon -->
-            <img src="assets/icons/your-product-is-worldwide.webp" alt="Card Icon">
+            <img src="assets/icons/your-product-is-worldwide.webp" width="60px" height="60px" alt="Third Feature Card Icon" loading="lazy">
             <!-- Card Header -->
             <h2>Your Product Is Worldwide</h2>
             <!-- Card Paragraph -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
+            <p aria-label="Third Feature Paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
         </div>
     </section>
-
     <!-- Services Section -->
-    <section id="services" class="parent">
+    <section aria-label="Services Section" id="services" class="parent">
         <h2 class="title">Services</h2>
-        <p class="quote">Don't be busy, be productive</p>
+        <p aria-label="Services Main Paragraph" class="quote">Don't be busy, be productive</p>
         <div class="container">
             <div class="content">
                 <div class="card">
                     <!-- Card Icon -->
-                    <img src="assets/icons/graphic-design.webp" alt="Service List Icon">
+                    <img src="assets/icons/graphic-design.webp" width="35px" height="35px" alt="First Service Card Icon" loading="lazy">
                     <!-- Card Header -->
                     <h3>Graphic Design</h3>
                     <!-- Card Paragraph -->
-                    <p>
+                    <p aria-label="First Service Paragraph">
                         Graphic design is the process of visual
                         communication and problem-solving
                         using one or more of typography,
                         photography and illustration.
                     </p>
                 </div>
-
                 <div class="card">
                     <!-- Card Icon -->
-                    <img src="assets/icons/web-design.webp" alt="Service List Icon">
+                    <img src="assets/icons/web-design.webp" width="35px" height="35px" alt="Second Service Card Icon" loading="lazy">
                     <!-- Card Header -->
                     <h3>Web Design</h3>
                     <!-- Card Paragraph -->
-                    <p>
+                    <p aria-label="Second Service Paragraph">
                         Web design encompasses many different
                         skills and disciplines in the production
                         and maintenance of websites.
                     </p>
                 </div>
-
                 <div class="card">
                     <!-- Card Icon -->
-                    <img src="assets/icons/ui-ux.webp" alt="Service List Icon">
+                    <img src="assets/icons/ui-ux.webp" width="35px" height="35px" alt="Third Service Card Icon" loading="lazy">
                     <!-- Card Header -->
                     <h3>UI & UX</h3>
                     <!-- Card Paragraph -->
-                    <p>
+                    <p aria-label="Third Service Paragraph">
                         Process of enhancing user satisfaction
                         with a product by improving the
                         usability, accessibility, and pleasure
                         provided in the interaction.
                     </p>
                 </div>
-
                 <div class="card">
                     <!-- Card Icon -->
-                    <img src="assets/icons/web-development.webp" alt="Service List Icon">
+                    <img src="assets/icons/web-development.webp" width="35px" height="35px" alt="Fourth Service Card Icon" loading="lazy">
                     <!-- Card Header -->
                     <h3>Web Development</h3>
                     <!-- Card Paragraph -->
-                    <p>
+                    <p aria-label="Fourth Service Paragraph">
                         Web development is a broad term for
                         the work involved in developing a web site
                         for the Internet or an intranet.
@@ -140,49 +163,46 @@
                 </div>
             </div>
             <!-- Side Image -->
-            <div class="image__container">
-                <img id="side" src="assets/images/services.webp" alt="Services Side Image">
+            <div aria-label="Services Side Image Container" class="image__container">
+                <img id="side" src="assets/images/services.webp" width="320px" height="240px" alt="Services Section Side Image" loading="lazy">
             </div>
         </div>
     </section>
-
     <!-- Portfolio Section -->
-    <section id="portfolio" class="parent">
+    <section aria-label="Portfolio Section" id="portfolio" class="parent">
         <h2 class="title">Portfolio</h2>
-        <p class="quote">If you do it right, it will last forever</p>
+        <p aria-label="Portfolio Main Paragraph" class="quote">If you do it right, it will last forever</p>
         <div class="container">
             <div class="content">
                 <div class="card">
                     <!-- Card Image -->
-                    <img src="assets/images/portfolio-1.webp" alt="Portfolio #1 Image">
+                    <img src="assets/images/portfolio-1.webp" width="360px" height="240px" alt="First Portfolio Card Image" loading="lazy">
                     <!-- Card Header -->
                     <h3>Project Here</h3>
                     <!-- Card Paragraph -->
-                    <p>
+                    <p aria-label="First Portfolio Paragraph">
                         My creative ability is very difficult to measure because it can
                         manifest in so many surprising and.
                     </p>
                 </div>
-
                 <div class="card">
                     <!-- Card Image -->
-                    <img src="assets/images/portfolio-2.webp" alt="Portfolio #2 Image">
+                    <img src="assets/images/portfolio-2.webp" width="360px" height="240px" alt="Second Portfolio Card Image" loading="lazy">
                     <!-- Card Header -->
                     <h3>Project Here</h3>
                     <!-- Card Paragraph -->
-                    <p>
+                    <p aria-label="Second Portfolio Paragraph">
                         My creative ability is very difficult to measure because it can
                         manifest in so many surprising and.
                     </p>
                 </div>
-
                 <div class="card">
                     <!-- Card Image -->
-                    <img src="assets/images/portfolio-3.webp" alt="Portfolio #3 Image">
+                    <img src="assets/images/portfolio-3.webp" width="360px" height="240px" alt="Third Portfolio Card Image" loading="lazy">
                     <!-- Card Header -->
                     <h3>Project Here</h3>
                     <!-- Card Paragraph -->
-                    <p>
+                    <p aria-label="Third Portfolio Paragraph">
                         My creative ability is very difficult to measure because it can
                         manifest in so many surprising and.
                     </p>
@@ -190,58 +210,54 @@
             </div>
         </div>
     </section>
-
-        <!-- About Section -->
-        <section id="about" class="parent">
-            <h2 class="title">About</h2>
-            <p class="quote">Less is more work</p>
-            <div class="container">
-                <div class="content">
-                    <div class="image__container">
-                        <img src="assets/images/about.webp" alt="About Side Image">
-                    </div>
-                    <div class="info">
-                        <!-- Top Text -->
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliqui
-                        </p>
-
-                        <!-- Bottom Text -->
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliqui
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="parent">
-            <h2 class="title">Contact</h2>
-            <p class="quote">We are born to create</p>
+    <!-- About Section -->
+    <section aria-label="About Section" id="about" class="parent">
+        <h2 class="title">About</h2>
+        <p aria-label="About Main Paragraph" class="quote">Less is more work</p>
+        <div class="container">
             <div class="content">
-                <h3>Feel free to drop us a line at:</h3>
-                <a href="mailto:leonagency@mail.com?subject=Contact%20Leon%20Company" class="mail">leonagency@mail.com</a>
-                <div class="social">
-                    <span>Find us on social networks:</span>
-                    <ul class="links">
-                        <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    </ul>
+                <div class="image__container">
+                    <img src="assets/images/about.webp" width="220px" height="330px" alt="About Section Side Image" loading="lazy">
+                </div>
+                <div class="info">
+                    <!-- Top Text -->
+                    <p aria-label="First About Paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliqui
+                    </p>
+                    <!-- Bottom Text -->
+                    <p aria-label="Second About Paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliqui
+                    </p>
                 </div>
             </div>
-        </section>
-
-        <!-- Footer Section -->
-        <footer>
-                &copy; 2022 - <span>Leon</span>, All Right Reserved
-        </footer>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section aria-label="Contact Section" id="contact" class="parent">
+        <h2 class="title">Contact</h2>
+        <p aria-label="Contact Main Paragraph" class="quote">We are born to create</p>
+        <div class="content">
+            <h3>Feel free to drop us a line at:</h3>
+            <a href="mailto:leonagency@mail.com?subject=Contact%20Leon%20Company" aria-label="Company Email" class="mail">leonagency@mail.com</a>
+            <div class="social">
+                <span>Find us on social networks:</span>
+                <ul class="links">
+                    <li><a href="#" aria-label="Dribbble Icon"><i class="fa-brands fa-dribbble"></i></a></li>
+                    <li><a href="#" aria-label="Google+ Icon"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                    <li><a href="#" aria-label="Twitter Icon"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer aria-label="Page Footer">
+            &copy; 2022 - <span>Leon</span>, All Right Reserved
+    </footer>
 </body>
 </html>
