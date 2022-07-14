@@ -1,6 +1,8 @@
 /* based on Bootstrap Grid System */
 
-/* xs: extra small devices (phones) */
+/* ******************************************************************** */
+/* *************** xs: extra small devices (phones) ******************* */
+/* ******************************************************************** */
 @media only screen and (max-width: 768px) {
     /* Each Section Main Container */
     .parent {
@@ -51,10 +53,6 @@
     }
 
     /* Side Image Container And Its Content */
-    /* .image__container {
-        display: none;
-    } */
-
     .image__container,
     .image__container::before,
     .image__container::after {
@@ -68,9 +66,43 @@
     #about .content {
         flex-direction: column;
     }
+
+    #contact .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Main Title */
+    #contact .content h3 {
+        font-size: 20pt;
+    }
+
+    /* Displayed Mail */
+    #contact .mail {
+        font-size: 18pt;
+        padding: 5px 20px;
+        padding-right: 0;
+    }
+
+    /* Social Media Container */
+    #contact .social {
+        margin-top: 30px;
+        padding: 0 32px;
+        font-size: 12pt;
+        width: 400px;
+    }
+
+    /* Social Media Links */
+    #contact .links a {
+        font-size: 16pt;
+    }
 }
 
-/* sm: small devices (tablets) */
+/* ******************************************************************** */
+/* ***************** sm: small devices (tablets) ********************** */
+/* ******************************************************************** */
 @media only screen and (min-width: 768px) {
     /* Each Section Main Container */
     .parent {
@@ -132,9 +164,32 @@
     #about .info {
         width: 100%;
     }
+
+    /* Main Title */
+    #contact .content h3 {
+        font-size: 24pt;
+    }
+
+    /* Displayed Mail */
+    #contact .mail {
+        font-size: 22pt;
+    }
+
+    /* Social Media Container */
+    #contact .social {
+        font-size: 16pt;
+        width: 550px;
+    }
+
+    /* Social Media Links */
+    #contact .links a {
+        font-size: 18pt;
+    }
 }
 
-/* md: medium devices (small laptops) */
+/* ******************************************************************** */
+/* ************** md: medium devices (small laptops) ****************** */
+/* ******************************************************************** */
 @media only screen and (min-width: 992px) {
     /* Each Section Main Container */
     .parent {
@@ -189,9 +244,32 @@
     #about .image__container::after {
         right: -120%;
     }
+
+    /* Main Title */
+    #contact .content h3 {
+        font-size: 30pt;
+    }
+
+    /* Displayed Mail */
+    #contact .mail {
+        font-size: 26pt;
+    }
+
+    /* Social Media Container */
+    #contact .social {
+        font-size: 16pt;
+        width: 550px;
+    }
+
+    /* Social Media Links */
+    #contact .links a {
+        font-size: 20pt;
+    }
 }
 
-/* lg: large devices (laptops and desktops) */
+/* ******************************************************************** */
+/* ************ lg: large devices (laptops and desktops) ************** */
+/* ******************************************************************** */
 @media only screen and (min-width: 1200px) {
     /* Section Title */
     .parent .title {
@@ -237,5 +315,26 @@
     /* Side Image Background Shape */
     #about .image__container::after {
         right: -88%;
+    }
+
+    /* Main Title */
+    #contact .content h3 {
+        font-size: 34pt;
+    }
+
+    /* Displayed Mail */
+    #contact .mail {
+        font-size: 28pt;
+    }
+
+    /* Social Media Container */
+    #contact .social {
+        font-size: 18pt;
+        width: 600px;
+    }
+
+    /* Social Media Links */
+    #contact .links a {
+        font-size: 22pt;
     }
 }
