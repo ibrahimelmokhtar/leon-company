@@ -1,13 +1,77 @@
 /* based on Bootstrap Grid System */
 
 /* xs: extra small devices (phones) */
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .container {
+        background-color: aqua;
+    }
+
+    /* Main Title */
+    #landing h1 {
+        font-size: 38pt;
+    }
+
+    /* Main Paragraph */
+    #landing p {
+        font-size: 14pt;
+        width: 85%;
+        max-width: 400px;
+    }
+}
 
 /* sm: small devices (tablets) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .container {
+        background-color: bisque;
+    }
+
+    /* Main Title */
+    #landing h1 {
+        font-size: 44pt;
+    }
+
+    /* Main Paragraph */
+    #landing p {
+        font-size: 16pt;
+        width: 55%;
+        max-width: 450px;
+    }
+}
 
 /* md: medium devices (small laptops) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    .container {
+        background-color: blueviolet;
+    }
+
+    /* Main Title */
+    #landing h1 {
+        font-size: 49pt;
+    }
+
+    /* Main Paragraph */
+    #landing p {
+        font-size: 18pt;
+        width: 50%;
+        max-width: 500px;
+    }
+}
 
 /* lg: large devices (laptops and desktops) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .container {
+        background-color: chocolate;
+    }
+
+    /* Main Title */
+    #landing h1 {
+        font-size: 55pt;
+    }
+
+    /* Main Paragraph */
+    #landing p {
+        font-size: 20pt;
+        width: 80%;
+        max-width: 550px;
+    }
+}

@@ -128,3 +128,36 @@ header .icon__bar:nth-child(2) {
     border-left-color: var(--green-color);
     padding-left: 30px;
 }
+
+/* ******************************************************************** */
+/* ****************************** Landing ***************************** */
+/* ******************************************************************** */
+/* Landing Section */
+#landing {
+    height: calc(100vh - 56px); /* - height of header element */
+    background-color: var(--light-color);
+    background-image: url('../images/landing.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Title */
+#landing h1 {
+    font-weight: 800;
+    font-size: 55pt;
+    color: var(--green-color);
+    margin-bottom: 10px;
+}
+
+/* Main Paragraph */
+#landing p {
+    font-size: 20pt;
+    color: var(--darker-color);
+    width: 45%;
+    text-align: center;
+}
