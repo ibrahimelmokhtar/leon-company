@@ -32,9 +32,10 @@
         max-width: 400px;
     }
 
-    /* Features Section */
+    /* Sections */
     #features,
-    #portfolio {
+    #portfolio,
+    #about {
         padding: 32px 24px;
     }
 
@@ -50,10 +51,22 @@
     }
 
     /* Side Image Container And Its Content */
-    #services .image__container,
-    #services .image__container img,
-    #services .image__container::after {
+    /* .image__container {
         display: none;
+    } */
+
+    .image__container,
+    .image__container::before,
+    .image__container::after {
+        display: none;
+    }
+
+    #about .image__container {
+        display: block;
+    }
+
+    #about .content {
+        flex-direction: column;
     }
 }
 
@@ -101,10 +114,23 @@
     }
 
     /* Side Image Container And Its Content */
-    #services .image__container,
-    #services .image__container img,
-    #services .image__container::after {
+    .image__container,
+    .image__container::before,
+    .image__container::after {
         display: none;
+    }
+
+    #about .image__container {
+        display: block;
+    }
+
+    #about .content {
+        flex-direction: column;
+    }
+
+    /* Text Container */
+    #about .info {
+        width: 100%;
     }
 }
 
@@ -144,10 +170,24 @@
     /* Card Paragraph: Inherited From (sm) devices */
 
     /* Side Image Container And Its Content */
-    #services .image__container,
-    #services .image__container img,
-    #services .image__container::after {
+    .image__container,
+    .image__container::before,
+    .image__container::after {
         display: block;
+    }
+
+    #about .content {
+        flex-direction: row;
+    }
+
+    /* Displayed Text */
+    #about .info p {
+        width: 60%;
+    }
+
+    /* Side Image Background Shape */
+    #about .image__container::after {
+        right: -120%;
     }
 }
 
@@ -187,5 +227,15 @@
     /* Card Paragraph */
     .card p {
         font-size: 15pt;
+    }
+
+    /* Text Container */
+    #about .info {
+        width: 550px;
+    }
+
+    /* Side Image Background Shape */
+    #about .image__container::after {
+        right: -88%;
     }
 }

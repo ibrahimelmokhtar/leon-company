@@ -333,3 +333,90 @@ header .icon__bar:nth-child(2) {
 #portfolio .card:hover {
     box-shadow: 4px 4px 4px var(--dark-color);
 }
+
+/* ******************************************************************** */
+/* ****************************** About ******************************* */
+/* ******************************************************************** */
+#about .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Side Image Container */
+#about .image__container {
+    width: 220px;
+    position: relative;
+    margin-right: 100px;
+}
+
+/* Side Image */
+#about .image__container img {
+    width: 100%;
+    transform: translate(50px, 0);
+    position: relative;
+    z-index: 1;
+}
+
+/* Side Image Background Shapes */
+#about .image__container::before {
+    content: '';
+    position: absolute;
+    top: -15%;
+    left: 0;
+    background-color: var(--lighter-color);
+    width: 100px;
+    height: 130%;
+}
+
+#about .image__container::after {
+    content: '';
+    position: absolute;
+    top: -8%;
+    border: solid var(--green-color);
+    border-width: 0 0 60px 80px;
+    width: 100px;
+    height: calc(100% - 80px);
+}
+
+/* Text Container */
+#about .info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Displayed Text */
+#about .info p {
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 12pt;
+    color: var(--dark-color);
+}
+
+/* First Paragraph */
+#about .info p:first-child {
+    font-size: 14pt;
+    font-weight: 800;
+    color: var(--darker-color);
+    padding-bottom: 40px;
+    position: relative;
+}
+
+/* Second Paragraph */
+#about .info p:last-child {
+    padding-top: 20px;
+}
+
+/* Horizontal Line Between Paragraphs */
+#about .info p:first-child::after {
+    content: '';
+    background-color: var(--green-color);
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
