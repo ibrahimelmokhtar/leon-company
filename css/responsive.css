@@ -17,6 +17,17 @@
         width: 85%;
         max-width: 400px;
     }
+
+    /* Card Title */
+    #features .card h2 {
+        font-size: 16pt;
+        line-height: 40pt;
+    }
+
+    /* Card Paragraph */
+    #features .card p {
+        font-size: 14pt;
+    }
 }
 
 /* sm: small devices (tablets) */
@@ -35,6 +46,17 @@
         font-size: 16pt;
         width: 55%;
         max-width: 450px;
+    }
+
+    /* Card Title */
+    #features .card h2 {
+        font-size: 16pt;
+        line-height: 40pt;
+    }
+
+    /* Card Paragraph */
+    #features .card p {
+        font-size: 14pt;
     }
 }
 
@@ -55,6 +77,9 @@
         width: 50%;
         max-width: 500px;
     }
+
+    /* Card Title: Inherited From (sm) devices */
+    /* Card Paragraph: Inherited From (sm) devices */
 }
 
 /* lg: large devices (laptops and desktops) */
@@ -73,5 +98,16 @@
         font-size: 20pt;
         width: 80%;
         max-width: 550px;
+    }
+
+    /* Card Title */
+    #features .card h2 {
+        font-size: 18pt;
+        line-height: 60pt;
+    }
+
+    /* Card Paragraph */
+    #features .card p {
+        font-size: 15pt;
     }
 }

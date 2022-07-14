@@ -22,14 +22,14 @@
 
 /* Each Section Main Container */
 .parent {
-    padding: 16px;
+    padding: 64px;
 }
 
 /* Container For Each Section */
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 16px;
+    /* padding: 0 16px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,6 +38,10 @@
 /* ******************************************************************** */
 /* ****************************** Header ****************************** */
 /* ******************************************************************** */
+header {
+    padding: 16px 64px;
+}
+
 /* Company Logo */
 #logo {
     width: 60px;
@@ -148,6 +152,7 @@ header .icon__bar:nth-child(2) {
 
 /* Main Title */
 #landing h1 {
+    text-transform: capitalize;
     font-weight: 800;
     font-size: 55pt;
     color: var(--green-color);
@@ -159,5 +164,49 @@ header .icon__bar:nth-child(2) {
     font-size: 20pt;
     color: var(--darker-color);
     width: 45%;
+    text-align: center;
+}
+
+/* ******************************************************************** */
+/* ***************************** Features ***************************** */
+/* ******************************************************************** */
+/* Features Section */
+#features {
+    padding: 32px 64px;
+    background-color: var(--light-color);
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+/* Single Feature Container */
+#features .card {
+    padding: 8px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#features .card:hover {
+    box-shadow: 4px 4px 4px var(--dark-color);
+}
+
+/* Card Icon */
+#features .card img {
+    height: 60px;
+}
+
+/* Card Title */
+#features .card h2 {
+    font-weight: 800;
+    color: var(--darker-color);
+}
+
+/* Card Paragraph */
+#features .card p {
+    font-weight: 400;
+    color: var(--dark-color);
+    line-height: 32pt;
     text-align: center;
 }
