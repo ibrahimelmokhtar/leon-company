@@ -4,14 +4,28 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap');
 
-/* Global Rules */
+/* ******************************************************************** */
+/* ************************** General Rules *************************** */
+/* ******************************************************************** */
+/* Root Variables */
 :root {
+    /* Colors */
     --white-color: #ffffff;
     --green-color: #10cab7;
     --light-color: #ebeced;
     --lighter-color: #fafafa;
     --dark-color: #575757;
     --darker-color: #2c4755;
+
+    /* Fonts */
+    --regular: 400;
+    --extrabold: 800;
+
+    /* Sizes */
+    --space-16: 16px;
+    --space-32: 32px;
+    --space-64: 64px;
+    --gap-30: 30px;
 }
 
 * {
@@ -21,9 +35,13 @@
     font-family: 'Work Sans', sans-serif;;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Each Section Main Container */
 .parent {
-    padding: 64px;
+    padding: var(--space-64);
 }
 
 /* Even Section */
@@ -39,7 +57,7 @@
 /* Section Title */
 .parent .title {
     color: var(--light-color);
-    font-weight: 800;
+    font-weight: var(--extrabold);
     letter-spacing: -2px;
     text-align: center;
 }
@@ -47,22 +65,22 @@
 .parent .quote {
     color: var(--darker-color);
     font-size: 14pt;
-    font-weight: 400;
+    font-weight: var(--regular);
     text-align: center;
 }
 
 .content {
-    padding: 64px 0;
+    padding: var(--space-64) 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+    gap: var(--gap-30);
 }
 
 /* ******************************************************************** */
 /* ****************************** Header ****************************** */
 /* ******************************************************************** */
 header {
-    padding: 16px 64px;
+    padding: var(--space-16) var(--space-64);
 }
 
 /* Main Container */
@@ -92,7 +110,7 @@ header .container {
     justify-content: space-between;
     align-items: flex-end;
     width: 40px;
-    height: 16px;
+    height: var(--space-16);
 }
 
 /* Menu Icon Bars */
@@ -149,7 +167,7 @@ header .icon__bar:nth-child(2) {
     text-decoration: none;
     text-transform: capitalize;
     color: var(--light-color);
-    font-weight: 400;
+    font-weight: var(--regular);
     font-size: 14pt;
     display: inline-block;
     width: 100%;
@@ -172,7 +190,7 @@ header .icon__bar:nth-child(2) {
 #landing {
     height: calc(100vh - 56px); /* - height of header element */
     background-color: var(--lighter-color);
-    background-image: url('../images/landing.jpg');
+    background-image: url('../assets/images/landing.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: inherit;
@@ -185,7 +203,7 @@ header .icon__bar:nth-child(2) {
 /* Main Title */
 #landing h1 {
     text-transform: capitalize;
-    font-weight: 800;
+    font-weight: var(--extrabold);
     font-size: 55pt;
     color: var(--green-color);
     margin-bottom: 10px;
@@ -204,10 +222,10 @@ header .icon__bar:nth-child(2) {
 /* ******************************************************************** */
 /* Features Section */
 #features {
-    padding: 32px 64px;
+    padding: var(--space-32) var(--space-64);
     background-color: var(--lighter-color);
     display: grid;
-    gap: 30px;
+    gap: var(--gap-30);
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
@@ -231,14 +249,14 @@ header .icon__bar:nth-child(2) {
 
 /* Card Title */
 #features .card h2 {
-    font-weight: 800;
+    font-weight: var(--extrabold);
     color: var(--darker-color);
     text-transform: capitalize;
 }
 
 /* Card Paragraph */
 #features .card p {
-    font-weight: 400;
+    font-weight: var(--regular);
     color: var(--dark-color);
     line-height: 32pt;
     text-align: center;
@@ -263,14 +281,14 @@ header .icon__bar:nth-child(2) {
 /* Card Header */
 #services .card h3 {
     color: var(--darker-color);
-    font-weight: 800;
+    font-weight: var(--extrabold);
     margin-left: calc(35px + 30px);
 }
 
 /* Card Paragraph */
 #services .card p {
     color: var(--darker-color);
-    font-weight: 400;
+    font-weight: var(--regular);
     line-height: 1.6;
     margin-top: 15px;
     margin-left: calc(35px + 30px);
@@ -318,14 +336,14 @@ header .icon__bar:nth-child(2) {
 /* Card Header */
 #portfolio .card h3 {
     color: var(--darker-color);
-    font-weight: 800;
+    font-weight: var(--extrabold);
     padding: 20px 20px 0;
 }
 
 /* Card Paragraph */
 #portfolio .card p {
     color: var(--darker-color);
-    font-weight: 400;
+    font-weight: var(--regular);
     line-height: 1.6;
     padding: 20px;
 }
@@ -391,7 +409,7 @@ header .icon__bar:nth-child(2) {
 /* Displayed Text */
 #about .info p {
     line-height: 1.6;
-    font-weight: 400;
+    font-weight: var(--regular);
     font-size: 12pt;
     color: var(--dark-color);
 }
@@ -399,7 +417,7 @@ header .icon__bar:nth-child(2) {
 /* First Paragraph */
 #about .info p:first-child {
     font-size: 14pt;
-    font-weight: 800;
+    font-weight: var(--extrabold);
     color: var(--darker-color);
     padding-bottom: 40px;
     position: relative;
@@ -435,14 +453,14 @@ header .icon__bar:nth-child(2) {
 /* Main Title */
 #contact .content h3 {
     color: var(--darker-color);
-    font-weight: 800;
+    font-weight: var(--extrabold);
     line-height: 2;
 }
 
 /* Displayed Mail */
 #contact .mail {
     color: var(--green-color);
-    font-weight: 800;
+    font-weight: var(--extrabold);
     padding: 5px 30px;
     padding-right: 0;
     text-decoration: none;
@@ -500,12 +518,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 800;
+    font-weight: var(--extrabold);
     font-size: 16pt;
     padding: 20px;
     text-transform: capitalize;
 }
 
+/* Company Name */
 footer span {
     color: var(--green-color);
     text-transform: initial;
