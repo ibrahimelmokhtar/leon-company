@@ -25,14 +25,29 @@
     padding: 64px;
 }
 
-/* Container For Each Section */
-.container {
-    width: 100%;
-    margin: 0 auto;
-    /* padding: 0 16px; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Even Section */
+.parent:nth-of-type(2n) {
+    background-color: var(--light-color);
+}
+
+/* Odd Section */
+.parent:nth-of-type(2n+1) {
+    background-color: var(--white-color);
+}
+
+/* Section Title */
+.parent .title {
+    color: var(--light-color);
+    font-weight: 800;
+    letter-spacing: -2px;
+    text-align: center;
+}
+
+.parent .quote {
+    color: var(--darker-color);
+    font-size: 14pt;
+    font-weight: 400;
+    text-align: center;
 }
 
 /* ******************************************************************** */
@@ -40,6 +55,15 @@
 /* ******************************************************************** */
 header {
     padding: 16px 64px;
+}
+
+/* Main Container */
+header .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Company Logo */
@@ -201,6 +225,7 @@ header .icon__bar:nth-child(2) {
 #features .card h2 {
     font-weight: 800;
     color: var(--darker-color);
+    text-transform: capitalize;
 }
 
 /* Card Paragraph */
@@ -209,4 +234,69 @@ header .icon__bar:nth-child(2) {
     color: var(--dark-color);
     line-height: 32pt;
     text-align: center;
+}
+
+/* ******************************************************************** */
+/* ***************************** Services ***************************** */
+/* ******************************************************************** */
+/* Main Container */
+#services .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#services .content {
+    padding: 64px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Card Icon */
+#services .card img {
+    height: 35px;
+    float: left;
+}
+
+/* Card Header */
+#services .card h3 {
+    color: var(--darker-color);
+    font-weight: 800;
+    margin-left: calc(35px + 30px);
+}
+
+/* Card Paragraph */
+#services .card p {
+    color: var(--darker-color);
+    font-weight: 400;
+    line-height: 1.6;
+    margin-top: 15px;
+    margin-left: calc(35px + 30px);
+}
+
+/* Side Image Container */
+#services .image__container {
+    position: relative;
+    margin-left: 100px;
+}
+
+/* Side Image */
+#services .image__container img {
+    height: 320px;
+    position: relative;
+    z-index: 1;
+    transform: translate(-50px, 0);
+}
+
+/* Side Image Background Shape */
+#services .image__container::after {
+    content: '';
+    width: 100px;
+    height: 120%;
+    background-color: var(--darker-color);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
 }

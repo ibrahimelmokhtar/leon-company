@@ -2,7 +2,21 @@
 
 /* xs: extra small devices (phones) */
 @media only screen and (max-width: 768px) {
-    .container {
+    /* Each Section Main Container */
+    .parent {
+        padding: 24px;
+    }
+
+    /* Section Title */
+    .parent .title {
+        font-size: 64pt;
+    }
+
+    .parent .quote {
+        margin-top: -30px;
+    }
+
+    header .container {
         background-color: aqua;
     }
 
@@ -18,6 +32,11 @@
         max-width: 400px;
     }
 
+    /* Features Section */
+    #features {
+        padding: 32px 24px;
+    }
+
     /* Card Title */
     #features .card h2 {
         font-size: 16pt;
@@ -28,11 +47,32 @@
     #features .card p {
         font-size: 14pt;
     }
+
+    /* Side Image Container And Its Content */
+    #services .image__container,
+    #services .image__container img,
+    #services .image__container::after {
+        display: none;
+    }
 }
 
 /* sm: small devices (tablets) */
 @media only screen and (min-width: 768px) {
-    .container {
+    /* Each Section Main Container */
+    .parent {
+        padding: 64px;
+    }
+
+    /* Section Title */
+    .parent .title {
+        font-size: 72pt;
+    }
+
+    .parent .quote {
+        margin-top: -30px;
+    }
+
+    header .container {
         background-color: bisque;
     }
 
@@ -58,11 +98,32 @@
     #features .card p {
         font-size: 14pt;
     }
+
+    /* Side Image Container And Its Content */
+    #services .image__container,
+    #services .image__container img,
+    #services .image__container::after {
+        display: none;
+    }
 }
 
 /* md: medium devices (small laptops) */
 @media only screen and (min-width: 992px) {
-    .container {
+    /* Each Section Main Container */
+    .parent {
+        padding: 64px;
+    }
+
+    /* Section Title */
+    .parent .title {
+        font-size: 80pt;
+    }
+
+    .parent .quote {
+        margin-top: -35px;
+    }
+
+    header .container {
         background-color: blueviolet;
     }
 
@@ -80,11 +141,27 @@
 
     /* Card Title: Inherited From (sm) devices */
     /* Card Paragraph: Inherited From (sm) devices */
+
+    /* Side Image Container And Its Content */
+    #services .image__container,
+    #services .image__container img,
+    #services .image__container::after {
+        display: block;
+    }
 }
 
 /* lg: large devices (laptops and desktops) */
 @media only screen and (min-width: 1200px) {
-    .container {
+    /* Section Title */
+    .parent .title {
+        font-size: 100pt;
+    }
+
+    .parent .quote {
+        margin-top: -45px;
+    }
+
+    header .container {
         background-color: chocolate;
     }
 
