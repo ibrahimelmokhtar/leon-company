@@ -7,7 +7,7 @@
     /* Section Title */
     .parent .title { font-size: 64pt; }
     /* Section Quote */
-    .parent .quote { margin-top: -30px; }
+    .parent .quote { margin-top: -20px; }
     /* Main Grid Content */
     .content {
         grid-template-rows: repeat(3, 1fr);
@@ -78,7 +78,7 @@
     /* Section Title */
     .parent .title { font-size: 72pt; }
     /* Section Quote */
-    .parent .quote { margin-top: -30px; }
+    .parent .quote { margin-top: -20px; }
     /* Main Grid Content */
     .content {
         grid-template-rows: repeat(2, 1fr);
@@ -126,7 +126,7 @@
     /* Section Title */
     .parent .title { font-size: 80pt; }
     /* Section Quote */
-    .parent .quote { margin-top: -35px; }
+    .parent .quote { margin-top: -25px; }
     /* Main Grid Content */
     .content {
         grid-template-rows: repeat(2, 1fr);
@@ -170,7 +170,7 @@
     /* Section Title */
     .parent .title { font-size: 100pt; }
     /* Section Quote */
-    .parent .quote { margin-top: -45px; }
+    .parent .quote { margin-top: -30px; }
     /* Main Grid Content */
     .content {
         grid-template-rows: repeat(1, 1fr);
