@@ -425,7 +425,11 @@ header .icon__bar:nth-child(2) {
 /* ***************************** Contact ****************************** */
 /* ******************************************************************** */
 #contact .content {
-    display: block;
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Main Title */
@@ -441,6 +445,7 @@ header .icon__bar:nth-child(2) {
     font-weight: 800;
     padding: 5px 30px;
     padding-right: 0;
+    text-decoration: none;
     position: relative;
     z-index: 1;
 }
@@ -484,4 +489,26 @@ header .icon__bar:nth-child(2) {
 
 #contact .links a:hover {
     color: var(--green-color);
+}
+
+/* ******************************************************************** */
+/* ****************************** Footer ****************************** */
+/* ******************************************************************** */
+footer {
+    background-color: var(--darker-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 16pt;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+footer span {
+    color: var(--green-color);
+    text-transform: initial;
+    margin-left: 10px;
+    margin-right: 5px;
 }
